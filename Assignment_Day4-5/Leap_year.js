@@ -18,4 +18,5 @@ function getNextLeapYear(year) {
 const year = parseInt(prompt("Please enter a year:"));
 
 const nextLeapYear = getNextLeapYear(year);
-console.log("the next leap year, After " + year + " is " + nextLeapYear);
+
+console.log(year + " is not a leap year, After " + year + " is " + nextLeapYear + " is next leap year.");
