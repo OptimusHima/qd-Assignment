@@ -1,7 +1,18 @@
-1. Create a function which tells if the input number is even or odd.
+// 1. Create a function which tells if the input number is even or odd.
 
-  var num = prompt("Enter any Number") ;
+  function checkEvenOdd(num){
+    //validation 
+  var correct_way = /^[0-9]+$/;
+  if(num.match(correct_way)){
     if(num%2==0)
       console.log(num + " is Even Number");
     else
       console.log(num + " is Odd Number");
+    }
+    else{
+      console.log("Enter only Number")
+    }
+  }
+   
+  let num = prompt("Enter any Number") ;
+  checkEvenOdd(num);
