@@ -8,10 +8,10 @@ const readline = require('readline').createInterface({
 
 readline.question('Enter a number: ', num => {
 
-  // Convert input to a number
+  // input to a number
   num = Number(num);
 
-  // Create a write stream to the file
+  // Create the file
   const file = fs.createWriteStream(`table-${num}.txt`);
   
   // Loop( 1 to 10 ) and write the multiplication table to the file
